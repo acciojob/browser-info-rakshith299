@@ -5,6 +5,9 @@ let div = document.getElementById("browser-info");
 let name = navigator.userAgent;
 let ver = navigator.appVersion;
 
-let res = "You are using " + name + " version " + ver;
+console.log(name);
+console.log(ver);
 
-div.innerHTML = res;
+let res = `You are using ${name} version ${ver}`;
+
+div.innerText = res;
